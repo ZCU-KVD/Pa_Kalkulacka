@@ -16,25 +16,49 @@
 <label>Výsledek: <input @bind-value="vysledek" readonly /></label>
 
 @code {
+
+	/// <summary>
+	/// První číslo pro výpočet.
+	/// </summary>
 	private double cislo1;
+
+	/// <summary>
+	/// Druhé číslo pro výpočet.
+	/// </summary>
 	private double cislo2;
+
+	/// <summary>
+	/// Výsledek matematické operace.
+	/// </summary>
 	private double vysledek;
 
+	/// <summary>
+	/// Vypočítá součet dvou čísel.
+	/// </summary>
 	private void Soucet()
 	{
 		vysledek = cislo1 + cislo2;
 	}
 
+	/// <summary>
+	/// Vypočítá rozdíl dvou čísel.
+	/// </summary>
 	private void Rozdil()
 	{
 		vysledek = cislo1 - cislo2;
 	}
 
+	/// <summary>
+	/// Vypočítá součin dvou čísel.
+	/// </summary>
 	private void Soucin()
 	{
 		vysledek = cislo1 * cislo2;
 	}
 
+	/// <summary>
+	/// Vypočítá podíl dvou čísel.
+	/// </summary>
 	private void Podil()
 	{
 		vysledek = cislo1 / cislo2;
